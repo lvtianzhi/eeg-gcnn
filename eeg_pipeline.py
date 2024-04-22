@@ -1,12 +1,12 @@
-import mne
-import matplotlib.pyplot as plt
+import mne//处理的脑电库
+import matplotlib.pyplot as plt//绘图库
 import pandas as pd
-import numpy as np
-import scipy.io
-import os
-from collections import OrderedDict
+import numpy as np//处理数据的库
+import scipy.io//处理mat文件
+import os//文件系统操作
+from collections import OrderedDict//按照插入的顺序排序
 
-def standardize_sensors(raw_data, channel_config, return_montage=True):
+def standardize_sensors(raw_data, channel_config, return_montage=True)://标准化处理
 
 	# channel_names = [x.upper() for x in raw_data.ch_names]
 	
